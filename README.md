@@ -14,3 +14,5 @@ Patterns that fall under this category include Decorator, Facade, Flyweight, Ada
 Behavioral patterns focus on improving or streamlining the communication between disparate objects in a system. They identify common communication patterns among objects and provide solutions that distribute the responsibility of communication among different objects, thereby increasing communication flexibility. Essentially, behavioral patterns abstract actions from objects that take the action.
 
 Some behavioral patterns include Iterator, Mediator, Observer, and Visitor.
+
+(Examples)[https://www.geeksforgeeks.org/builder-method-javascript-design-pattern/?ref=lbp]
