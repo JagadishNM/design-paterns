@@ -46,9 +46,9 @@ let container = IOCContainer.instance;
 console.log(ConcreteA);
 console.log(ConcreteB);
 
-// let a = container.resolve<IDepA>('IDepA');
-// a.doA();
-// let b = container.resolve<IDepB>('IDepB');
-// b.doB();
+let a = container.resolve<IDepA>('IDepA');
+a.doA();
+let b = container.resolve<IDepB>('IDepB');
+b.doB();
 let c = container.resolve<IDepC>('IDepC');
 c.doC();

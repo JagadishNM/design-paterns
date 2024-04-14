@@ -3,7 +3,7 @@ interface Iphone {
 }
 
 interface Android {
-	useMicroUsb: () => void;
+	useMicroUsbCable: () => void;
 }
 
 class Iphone12 implements Iphone {
@@ -13,7 +13,7 @@ class Iphone12 implements Iphone {
 }
 
 class GooglePixel implements Android {
-	useMicroUsb() {
+	useMicroUsbCable() {
 		console.log('using micrp USB cable');
 	}
 }
@@ -23,7 +23,7 @@ class LighteningToMicroUsbAdaptor implements Android {
 	constructor(iphone: Iphone) {
 		this.iphone = iphone;
 	}
-	useMicroUsb() {
+	useMicroUsbCable() {
 		this.iphone.useLighteningCable();
 	}
 }
@@ -32,4 +32,4 @@ let iphone = new Iphone12();
 
 let convert = new LighteningToMicroUsbAdaptor(iphone);
 
-console.log(convert.useMicroUsb());
+console.log(convert.useMicroUsbCable());

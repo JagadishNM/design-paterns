@@ -11,9 +11,9 @@ class TargetInterface {
 }
 
 class Adaptor extends TargetInterface {
-	oldSystem: any;
+	oldSystem: OldSystem;
 
-	constructor(oldSystem) {
+	constructor(oldSystem:OldSystem) {
 		super();
 		this.oldSystem = oldSystem;
 	}
